@@ -106,7 +106,6 @@ def export_books():
             f.write(f"{name},{info['Author']},{info['Copies']}\n")
     print("Books exported.")
 
-# عرض كامل محتوى Users.csv
 
 def show_users_file():
     file_path = os.path.dirname(__file__)+"\\"+"Users.csv"
@@ -120,7 +119,6 @@ def show_users_file():
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
 
-# عرض كامل محتوى Ratings.csv
 def show_ratings_file():
     file_path = os.path.dirname(__file__)+"\\"+"Ratings.csv"
     try:
